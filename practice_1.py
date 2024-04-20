@@ -72,3 +72,15 @@ print(message[1])
 # Split separates a string into an array of smaller strings, separated by an input index
 split_message = message.split(" ")
 print(split_message)
+
+# Loops
+for i in range(100):
+    print(i)
+
+counter = 0
+while foo_bool:
+    counter = counter+1
+    if counter == 10:
+        break
+    else:
+        print("I'm spinning round and round!")
