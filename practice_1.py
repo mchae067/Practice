@@ -28,6 +28,7 @@ print(f"Printing literal values of foo + purple: {foo + purple}")
 # float
 foo_float = 1.5
 bar_float = 3.0
+print(f"3.0 / 1.5 = : {bar_float / foo_float}")
 
 
 # long
@@ -41,16 +42,20 @@ bar_bool = False
 purple = 1000
 # condition is True
 condition = (purple == 1000)
-print(condition)
+print(f"\nIs purple equal to 1000?: {condition}")
 
 if foo_bool:
     print("Random phrase!")
-if bar_bool:
+elif bar_bool:
     print("A different random phrase!")
+else:
+    print("No random phrase")
+
 if purple == 1000:
     print("Condition passed!")
-if purple > 1000:
+elif purple > 1000:
     print("Purple is greater than 1000!")
+
 if purple - 100 <= 1000:
     print("Purple minus 100 is less than or equal to 1000!")
 
@@ -64,7 +69,7 @@ character = 'a'
 output_value = "Hello World!"
 output_value2 = " How are you doing?"
 
-print(output_value)
+print("\n"+output_value)
 
 message = output_value + output_value2
 print(message)
@@ -73,7 +78,9 @@ print(message[1])
 split_message = message.split(" ")
 print(split_message)
 
+
 # Loops
+print("\n")
 for i in range(100):
     print(i)
 
