@@ -13,4 +13,4 @@
 # Write a function that takes in two lists of equal length, for example:
 state_list = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut"]
 capital_list = ["Montgomery", "Juneau", "Phoenix", "Little Rock", "Sacramento", "Denver", "Hartford"]
-# Return a Dictionary where the first list as the keys, and the second as the values
+# Return a Dictionary with the first list as the keys, and the second as the values
