@@ -9,10 +9,17 @@
 #         elif i % 1 == 0:
 #             print("penny")
 
+nickels = 5
+pennies = 1
 
 def coins(nickels, pennies, goal_total):
-    return
+    if nickels % goal_total and pennies % goal_total >= 0:
+        return True
+    else:
+        return False
 
+print(coins(2, 1, 10))
+print(coins(2, 1, 12))
 
 coins(2, 1, 10) # Should return True
 coins(2, 1, 12) # Should return False
