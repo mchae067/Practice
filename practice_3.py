@@ -20,10 +20,11 @@ class Garment():
 
 # Create a new instance of the class stored in a variable called 'my_garment'
 my_garment = Garment("My favorite shirt", "shirt", "blue", 2)
-print(my_garment)
+# Calling print() on an object will print the calling module (__main__ in this case), type, and place in memory
+print(f"Showing new Garment object: {my_garment}")
 
 # Properties of an object can be accessed using the dot operator
-print(my_garment.name)
+print(f"Showing name property of new Garment: {my_garment.name}")
 
 
 # Create another Class, Drawer, to store Garments
@@ -49,13 +50,13 @@ class Drawer():
 
 
 my_drawer = Drawer(20)
-print(my_drawer.garments)
+print(f"Showing that Drawer instantiated itself with empty list of garments as a property: {my_drawer.garments}")
 
 # Use class function to add a garment
 # Class functions are also accessed with the dot operator
 my_drawer.add_garment(my_garment)
-print(my_drawer.garments)
+print(f"Showing Drawer.garments after calling add_garment function of Drawer: {my_drawer.garments}")
 # Print the name of the first item in my_drawer's garments
-print(my_drawer.garments[0].name)
-print(my_drawer.can_fit_new_garment(2))
-print(my_drawer.count())
+print(f"Showing name property of Garment added to the Drawer: {my_drawer.garments[0].name}")
+print(f"can_fit_new_garment() function of Drawer: {my_drawer.can_fit_new_garment(2)}")
+print(f"count() function output of Drawer: {my_drawer.count()}")
